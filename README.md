@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Car rental Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Car Rental Agency
+1. Assume you are designing a real-life system that will be used by real users.
+2. The application should contain 2 types of users: Customers and Car Rental Agency
+3. Pages to be developed-
+● ‘Registration’ pages - Different registration pages for customers & car rental agencies.
 
-## Available Scripts
+● ‘Login’ pages - Single/different login pages for customers & car rental agencies.
 
-In the project directory, you can run:
 
-### `npm start`
+● ‘Add new cars’ page - A Car rental agency once logged in, should be able to add details
+of new cars available for rental. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Details to add
+○ Vehicle model, Vehicle number, seating capacity, rent per day
+Access to this page should be restricted only to the car rental agency. Car rental
+agencies should also be able to edit the details of a particular car
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+● ‘Available cars to rent’ page - There should be a page that displays all the available
+cars to rent. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Details to display -
+○ Vehicle model, Vehicle number, seating capacity, rent per day
 
-### `npm run build`
+○ Capture input as dropdown for the number of days the customer need to rent the
+car (This input only be shown when the customer is logged in)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+○ Capture start date (This input only be shown when the customer is logged in)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+○ ‘Rent Car’ button.
+This page should be accessible to everyone, irrespective of whether the user is logged in
+or not. 
+Expected functionality on click of the ‘Rent Car’ button-
+○ Only customers should be able to book the available car by clicking the ‘Rent
+Car’ button.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+○ If the customer is not logged in, then he/she should be redirected to the login
+page.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+○ If a user is logged in as an agency, then the user should not be allowed to book
+the available car
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+● Car Agency ‘View booked cars’ page - Agency should be able to see the list of all the
+customers who have booked a particular car
+![Screenshot (34)](https://user-images.githubusercontent.com/88779258/185733237-66c803e4-02ee-4d91-8f84-40bbd45abb91.png)
+![Screenshot (35)](https://user-images.githubusercontent.com/88779258/185733238-59a87e92-c86f-4bbc-8261-10b114ac07b6.png)
+![Screenshot (36)](https://user-images.githubusercontent.com/88779258/185733239-3b33597b-8842-4976-b183-c3652f1b65e5.png)
+![Screenshot (37)](https://user-images.githubusercontent.com/88779258/185733241-ab8a93e3-1512-4596-8ccc-9b06a6b9ec8e.png)
+![Screenshot (38)](https://user-images.githubusercontent.com/88779258/185733242-130908cb-490b-4b51-8296-31a0e2c1e7bc.png)
+![Screenshot (39)](https://user-images.githubusercontent.com/88779258/185733243-fcf5d685-bfd7-4214-82b7-83adc346df49.png)
